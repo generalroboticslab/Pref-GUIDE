@@ -5,16 +5,16 @@
 
 [website](http://generalroboticslab.com/Pref-GUIDE) | [paper](link_here) | [video](video_link)
 
-![Multi-Agent/Robot Collaboration](images/Teaser.jpeg)
+![Multi-Agent/Robot Collaboration](Figure/Method.png)
 
 
 ## Overview
 Humans play a crucial role in training reinforcement learning agents, particularly when designing explicit reward functions is difficult. Prior work has focused on either offline labeling of trajectories or real-time human feedback during the agent’s learning process. However, real-time feedback is often expensive. To reuse this valuable data beyond the human-in-the-loop phase, the state-of-the-art method, GUIDE, trained a regression-based reward model for continual learning. Nevertheless, human preferences are inherently inconsistent and noisy, leading to inaccurate reward predictions and suboptimal performance in continual learning. We propose Pref-GUIDE, a novel method that transforms real-time scalar human feedback collected from GUIDE into preference-based datasets for training preference-based reward models. Pref-GUIDE Individual addresses temporal inconsistency through a moving window sampling strategy and accounts for inherent human randomness by introducing a no-preference range. To further enhance robustness, we leverage feedback from 50 human subjects by introducing a voting-based relabeling scheme, Pref-GUIDE Voting, that aggregates multiple subject-specific reward models to generate consensus preference labels. Experiments across three distinct environments demonstrate that Pref-GUIDE Individual outperforms GUIDE during continual learning. Furthermore, Pref-GUIDE Voting achieves even greater performance, surpassing both Pref-GUIDE Individual and human-designed heuristic dense rewards in complex environments. Our study proposes a novel method for reusing valuable real-time scalar human feedback by converting it into preference-based data for training more robust and consistent reward models for continual learning after the human left loop..
 
-![Method](images/Mainfig.jpeg)
+![Method](Figure/Method.png)
 
 ## Result
-![Method](images/Simulation.png)
+![Method](Figure/Main_Experiment.png)
 
 
 
