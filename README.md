@@ -5,7 +5,7 @@
 
 [website](http://generalroboticslab.com/Pref-GUIDE) | [paper](link_here) | [video](video_link)
 
-![Multi-Agent/Robot Collaboration](Figure/Method.png)
+![Multi-Agent/Robot Collaboration](Figure/Teaser.png)
 
 
 ## Overview
