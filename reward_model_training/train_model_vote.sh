@@ -1,0 +1,8 @@
+source ./utils.sh
+
+
+train_vote "1 2 7 10 13 15 17 18 25 30 32 33 37 39 44 0 3 4 5 6 8 9 11 14 16 19 20 21 22 23 24 26 27 28 29 31 34 35 36 38 40 41 43 45 46 47 48 49 50 51" "find_treasure" 1 0 1 "hard_label_pretrain_activation"
+
+
+
+

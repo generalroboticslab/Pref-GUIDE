@@ -1,0 +1,4 @@
+defaults:
+  - base_config
+  - envs: bowling
+  - _self_

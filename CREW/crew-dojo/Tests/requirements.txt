@@ -1,0 +1,9 @@
+black
+psutil
+
+numpy
+
+tk
+screeninfo
+
+tobii-research==1.11.0

@@ -1,0 +1,10 @@
+defaults:
+  - /envs/base_tetris@_here_
+  - _self_
+
+unity_server_build_path_linux: '../crew-dojo/Builds/Tetris-StandaloneLinux64-Server/Unity.x86_64'
+unity_server_build_path_osx: '../crew-dojo/Builds/Tetris-StandaloneOSX-Server/Unity'
+log_folder_path: '../UnityLogs'
+no_graphics: False
+time_scale: 1
+seed: 42

@@ -1,0 +1,10 @@
+{
+    "server": {
+        "linux": "",
+        "win32": "../Builds/TestScene-Win-Server/Unity.exe"
+    },
+    "client": {
+        "linux": "",
+        "win32": "../Builds/TestScene-Win-Client/Unity.exe"
+    }
+}

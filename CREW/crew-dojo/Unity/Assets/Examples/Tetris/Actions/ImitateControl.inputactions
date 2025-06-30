@@ -1,0 +1,54 @@
+{
+    "name": "ImitateControl",
+    "maps": [
+        {
+            "name": "ImitateControl",
+            "id": "97055b66-83d4-4b25-8ba6-eb7c49fe338b",
+            "actions": [
+                {
+                    "name": "Start",
+                    "type": "Button",
+                    "id": "d7325b5e-90c4-4fab-a4da-f1d9b20a4d8c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Stop",
+                    "type": "Button",
+                    "id": "29bf79f0-f307-43fd-b308-99626e9228d8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6d4b7bb9-7ec4-4be2-95e6-aa7a11b1474d",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Start",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f1f859f2-8ae7-4dad-a205-9d06dccf534e",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Stop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

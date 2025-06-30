@@ -1,0 +1,74 @@
+{
+    "name": "HumanFeedback",
+    "maps": [
+        {
+            "name": "HumanFeedback",
+            "id": "b2c1ab7b-d4a1-4905-ac20-9053a352fa3f",
+            "actions": [
+                {
+                    "name": "Positive",
+                    "type": "Button",
+                    "id": "da63dd02-e2d0-4be0-ba5e-6af5a4b43e60",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Neutral",
+                    "type": "Button",
+                    "id": "ad635cca-c0fe-42c0-9a6b-e1fa4a90defb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Negative",
+                    "type": "Button",
+                    "id": "c3a0e07f-85dd-4c0e-8cde-91523ec8d29b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1bed1b07-e830-496a-a550-d3e3fe74482b",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Positive",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "085dba06-5d1b-40e2-8466-8b6feee4cbe8",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Neutral",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "873ec953-abed-43ee-b213-a231ee7fd455",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Negative",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

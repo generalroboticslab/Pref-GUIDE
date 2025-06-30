@@ -1,0 +1,7 @@
+defaults:
+  - /envs/base_wall_jump@_here_
+  - _self_
+
+unity_server_build_path_linux: '../crew-dojo/Builds/WallJump-StandaloneLinux64-Server/Unity.x86_64'
+unity_server_build_path_osx: '../crew-dojo/Builds/WallJump-StandaloneOSX-Server/Unity'
+log_folder_path: '../UnityLogs'
