@@ -46,7 +46,7 @@ This repository has the following structure
 ## Acknowledgement
 
 
-This work is supported by the ARL STRONG program under awards W911NF2320182 and W911NF2220113. We also thank [Lingyu Zhang](https://www.jiaxunliu.com/) for helpful discussion.
+This work is supported by the ARL STRONG program under awards W911NF2320182 and W911NF2220113. We also thank [Lingyu Zhang](https://lingyu98.github.io/) for helpful discussion.
 
 
 ## Citation
