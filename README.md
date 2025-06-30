@@ -20,27 +20,9 @@ Humans play a crucial role in training reinforcement learning agents, particular
 
 ## Quick Start
 
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/generalroboticslab/HUMAC.git
-    ```
-    
-## Repository Structure
-This repository has the following structure
-```plaintext
-├── Simulation              
-│   └── crew-algorithms
-│   └── environment
-│   └── training
-├── Real-World
-│   └── environment
-│   └── training
-├── images
-├── .gitignore              
-├── README.md           
-└── LICENSE             
-
+Clone the repository:
+```bash
+git clone https://github.com/generalroboticslab/Pref-GUIDE.git
 ```
 
 ## Acknowledgement
