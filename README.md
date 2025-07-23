@@ -9,7 +9,7 @@
 ![Method](Figure/Method.png)
 
 ## Result
-![Method](Figure/Main_experiment.png)
+![Method](Figure/Main_Experiment.png)
 
 
 
