@@ -5,7 +5,7 @@
 
 [website](http://generalroboticslab.com/Pref-GUIDE) | [paper](link_here) | [video](video_link)
 
-## Method
+## Overview
 ![Method](Figure/Method1.png)
 
 ## Result
