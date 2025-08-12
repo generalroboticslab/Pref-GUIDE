@@ -27,6 +27,8 @@ Activate the Conda Environment
 conda activate crew
 ```
 
+Download the example human feedback dataset from [here]()
+
 Train the preference-based reward model:
 ```bash
 cd reward_model_training
