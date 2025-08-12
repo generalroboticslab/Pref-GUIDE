@@ -20,14 +20,26 @@ Clone the repository:
 git clone https://github.com/generalroboticslab/Pref-GUIDE.git
 ```
 
+Install the conda environment, follow the instructions in [CREW](https://generalroboticslab.github.io/crew-docs/)
+'''bash
+conda activate crew
+'''
+
 Train the preference-based reward model:
 ```bash
-
+cd reward_model_training
+bash train_model.sh
 ```
 
-Train RL Agent with the reward model:
+Train the RL Agent with the reward model:
 ```bash
-git clone https://github.com/generalroboticslab/Pref-GUIDE.git
+cd CREW/crew-algorithms
+bash ddpg.sh
+```
+
+Evaluate the trained RL Agent
+```bash
+bash ddpg_eval.sh
 ```
 
 
