@@ -27,7 +27,7 @@ git clone https://github.com/generalroboticslab/Pref-GUIDE.git
 conda activate crew
 ```
 
-4. Download the human feedback dataset from [here]()
+4. Download the human feedback dataset from [here](https://zenodo.org/records/16816251)
 
 5. Process the dataset for reward model training
 ```bash
