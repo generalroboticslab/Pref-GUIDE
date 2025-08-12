@@ -22,7 +22,7 @@ git clone https://github.com/generalroboticslab/Pref-GUIDE.git
 
 2. Install the CREW platform, follow the instructions in [CREW](https://generalroboticslab.github.io/crew-docs/)
 
-3. Activate the Conda Environment
+3. Activate the conda environment
 ```bash
 conda activate crew
 ```
