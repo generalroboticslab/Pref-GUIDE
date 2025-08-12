@@ -31,6 +31,21 @@ This work is supported by the ARL STRONG program under awards W911NF2320182, W91
 If you think this paper is helpful, please consider citing our work
 
 ```plaintext
-Add Citation here
+@ARTICLE{2025arXiv250807126J,
+       author = {{Ji}, Zhengran and {Chen}, Boyuan},
+        title = "{Pref-GUIDE: Continual Policy Learning from Real-Time Human Feedback via Preference-Based Learning}",
+      journal = {arXiv e-prints},
+     keywords = {Machine Learning, Artificial Intelligence},
+         year = 2025,
+        month = aug,
+          eid = {arXiv:2508.07126},
+        pages = {arXiv:2508.07126},
+archivePrefix = {arXiv},
+       eprint = {2508.07126},
+ primaryClass = {stat.ML},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2025arXiv250807126J},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
 ```
 
