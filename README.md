@@ -3,7 +3,7 @@
 
 ¹ Duke University
 
-[website](http://generalroboticslab.com/Pref-GUIDE) | [paper](https://arxiv.org/abs/2508.07126) | [video](https://youtu.be/r9Cd7eEdLWE)
+[Website](http://generalroboticslab.com/Pref-GUIDE) | [Paper](https://arxiv.org/abs/2508.07126) | [Video](https://youtu.be/r9Cd7eEdLWE)
 
 ## Overview
 ![Method](Figure/Method1.png)
@@ -19,6 +19,17 @@ Clone the repository:
 ```bash
 git clone https://github.com/generalroboticslab/Pref-GUIDE.git
 ```
+
+Train the preference-based reward model:
+```bash
+
+```
+
+Train RL Agent with the reward model:
+```bash
+git clone https://github.com/generalroboticslab/Pref-GUIDE.git
+```
+
 
 ## Acknowledgement
 
