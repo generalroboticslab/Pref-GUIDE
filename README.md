@@ -46,6 +46,5 @@ archivePrefix = {arXiv},
        adsurl = {https://ui.adsabs.harvard.edu/abs/2025arXiv250807126J},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
-
 ```
 
