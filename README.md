@@ -21,9 +21,9 @@ git clone https://github.com/generalroboticslab/Pref-GUIDE.git
 ```
 
 Install the conda environment, follow the instructions in [CREW](https://generalroboticslab.github.io/crew-docs/)
-'''bash
+```bash
 conda activate crew
-'''
+```
 
 Train the preference-based reward model:
 ```bash
