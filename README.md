@@ -32,12 +32,12 @@ conda activate crew
 tar -xvzf RL_checkpoint.tar.gz
 cd RL_checkpoint
 python unzip_data.py
+cd ../
 ```   
 
 6. Process the dataset for reward model training
 ```bash
-cd process_data
-python process_data_traj.py
+python process_data/process_data_traj.py
 ```
 
 6. Train the preference-based reward model:
@@ -58,7 +58,6 @@ bash ddpg_eval.sh
 ```
 
 ## Acknowledgement
-
 
 This work is supported by the ARL STRONG program under awards W911NF2320182, W911NF2220113, and W911NF2420215, and by gift supports from BMW and OpenAI. We also thank [Lingyu Zhang](https://lingyu98.github.io/) for helpful discussion.
 
