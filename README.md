@@ -15,33 +15,33 @@
 
 ## Quick Start
 
-Clone the repository:
+1. Clone the repository:
 ```bash
 git clone https://github.com/generalroboticslab/Pref-GUIDE.git
 ```
 
-Install the CREW platform, follow the instructions in [CREW](https://generalroboticslab.github.io/crew-docs/)
+2. Install the CREW platform, follow the instructions in [CREW](https://generalroboticslab.github.io/crew-docs/)
 
-Activate the Conda Environment
+3. Activate the Conda Environment
 ```bash
 conda activate crew
 ```
 
-Download the example human feedback dataset from [here]()
+4. Download the example human feedback dataset from [here]()
 
-Train the preference-based reward model:
+5. Train the preference-based reward model:
 ```bash
 cd reward_model_training
 bash train_model.sh
 ```
 
-Train the RL Agent with the reward model:
+6. Train the RL Agent with the reward model:
 ```bash
 cd CREW/crew-algorithms
 bash ddpg.sh
 ```
 
-Evaluate the trained RL Agent
+7. Evaluate the trained RL Agent
 ```bash
 bash ddpg_eval.sh
 ```
