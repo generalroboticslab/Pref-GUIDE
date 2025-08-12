@@ -3,7 +3,7 @@
 
 ¹ Duke University
 
-[website](http://generalroboticslab.com/Pref-GUIDE) | [paper](https://arxiv.org/abs/2508.07126) | [video](video_link)
+[website](http://generalroboticslab.com/Pref-GUIDE) | [paper](https://arxiv.org/abs/2508.07126) | [video](https://youtu.be/r9Cd7eEdLWE)
 
 ## Overview
 ![Method](Figure/Method1.png)
