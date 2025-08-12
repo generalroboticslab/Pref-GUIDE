@@ -3,7 +3,7 @@
 
 ¹ Duke University
 
-[website](http://generalroboticslab.com/Pref-GUIDE) | [paper](link_here) | [video](video_link)
+[website](http://generalroboticslab.com/Pref-GUIDE) | [paper](https://arxiv.org/abs/2508.07126) | [video](video_link)
 
 ## Overview
 ![Method](Figure/Method1.png)
@@ -23,7 +23,7 @@ git clone https://github.com/generalroboticslab/Pref-GUIDE.git
 ## Acknowledgement
 
 
-This work is supported by the ARL STRONG program under awards W911NF2320182 and W911NF2220113. We also thank [Lingyu Zhang](https://lingyu98.github.io/) for helpful discussion.
+This work is supported by the ARL STRONG program under awards W911NF2320182, W911NF2220113, and W911NF2420215, and by gift supports from BMW and OpenAI. We also thank [Lingyu Zhang](https://lingyu98.github.io/) for helpful discussion.
 
 
 ## Citation
