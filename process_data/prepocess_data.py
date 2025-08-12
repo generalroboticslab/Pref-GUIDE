@@ -3,7 +3,9 @@ from torchrl.data import LazyMemmapStorage, TensorDictReplayBuffer
 import torch
 import os
 
-human_subject_id_list = [1]
+human_subject_id_list = list(range(52))
+human_subject_id_list.remove(42)
+human_subject_id_list.remove(12)
 
 S = 20000
 
@@ -16,29 +18,17 @@ for human_subject_id in human_subject_id_list:
 
     rb = TensorDictReplayBuffer(storage = storage)
     try:
-        rb.loads(f"guide_data/{human_subject_id}_Data/saved_training/{human_subject_id}_{game_name}_guide/prb.pkl")
+        rb.loads(f"RL_checkpoint/{human_subject_id}_Data/saved_training/{human_subject_id}_{game_name}_guide/prb.pkl")
     except:
-        rb.loads(f"guide_data/{human_subject_id}_data/saved_training/{human_subject_id}_{game_name}_guide/prb.pkl")
+        rb.loads(f"RL_checkpoint/{human_subject_id}_data/saved_training/{human_subject_id}_{game_name}_guide/prb.pkl")
     data = rb.sample(S)
 
-    img = data["agents","observation","obs_0_0"]
     index = data["index"]
-    human_feedback = data["next","agents","feedback"]
-    if game_name != "bowling":
-        heuristic_feedback = data["next","agents","heuristic_feedback"]
-    action = data["agents","action"]
-    done = data["agents","done"]
-
+    traj_id = data["collector","traj_ids"]
     sorted_index = index[index.argsort()].unique()
 
     data_length = len(sorted_index)
-    sorted_img = torch.zeros((data_length,img.shape[1],img.shape[2],img.shape[3],img.shape[4]))
-    sorted_action = torch.zeros((data_length,action.shape[1],action.shape[2],action.shape[3]))
-    sorted_done = torch.zeros((data_length,1,1))
-    sorted_human_feedback = torch.zeros((data_length,1,1))
-    sorted_heuristic_feedback = torch.zeros((data_length,1,1))
-    
-    print(sorted_human_feedback.sum())
+    sorted_traj_id = torch.zeros(data_length)
 
     index_list = []
     new_index_list = []
@@ -50,19 +40,10 @@ for human_subject_id in human_subject_id_list:
 
     for i,ind in enumerate(index_list):
         # print(i,ind)
-        sorted_img[i] = img[ind]
-        sorted_action[i] = action[ind]
-        sorted_human_feedback[i] = human_feedback[ind]
-        if game_name != "bowling":
-            sorted_heuristic_feedback[i] = heuristic_feedback[ind]
+        sorted_traj_id[i] = traj_id[ind]
+    print(sorted_traj_id.shape)
 
-    print(sorted_img.shape)
+    if not os.path.exists(f"Preference_guide_Data/{game_name}/{human_subject_id}"):
+        os.makedirs(f"Preference_guide_Data/{game_name}/{human_subject_id}")
 
-    # if not os.path.exists(f"Preference_guide_Data/{game_name}/{human_subject_id}"):
-    #     os.makedirs(f"Preference_guide_Data/{game_name}/{human_subject_id}")
-
-    # torch.save(sorted_img,f"Preference_guide_Data/{game_name}/{human_subject_id}/{human_subject_id}_img.pt")
-    # torch.save(sorted_action,f"Preference_guide_Data/{game_name}/{human_subject_id}/{human_subject_id}_action.pt")
-    # torch.save(sorted_human_feedback,f"Preference_guide_Data/{game_name}/{human_subject_id}/{human_subject_id}_human_feedback.pt")
-    # if game_name != "bowling":
-    #     torch.save(sorted_heuristic_feedback,f"Preference_guide_Data/{game_name}/{human_subject_id}/{human_subject_id}_heuristic_feedback.pt")
+    torch.save(sorted_traj_id,f"Preference_guide_Data/{game_name}/{human_subject_id}/{human_subject_id}_tarj_ids.pt")
