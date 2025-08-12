@@ -54,6 +54,7 @@ bash ddpg.sh
 
 8. Evaluate the trained RL Agent
 ```bash
+cd CREW/crew-algorithms
 bash ddpg_eval.sh
 ```
 
