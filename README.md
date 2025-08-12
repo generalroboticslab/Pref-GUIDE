@@ -37,7 +37,7 @@ cd ../
 
 6. Process the dataset for reward model training
 ```bash
-python process_data/process_data_traj.py
+python process_data/process_data.py
 ```
 
 6. Train the preference-based reward model:
