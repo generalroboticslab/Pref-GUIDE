@@ -20,7 +20,9 @@ Clone the repository:
 git clone https://github.com/generalroboticslab/Pref-GUIDE.git
 ```
 
-Install the conda environment, follow the instructions in [CREW](https://generalroboticslab.github.io/crew-docs/)
+Install the CREW platform, follow the instructions in [CREW](https://generalroboticslab.github.io/crew-docs/)
+
+Activate the Conda Environment
 ```bash
 conda activate crew
 ```
