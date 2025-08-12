@@ -29,19 +29,25 @@ conda activate crew
 
 4. Download the example human feedback dataset from [here]()
 
-5. Train the preference-based reward model:
+5. Process the dataset for reward model training
+```bash
+cd process_data
+python process_data_traj.py
+```
+
+6. Train the preference-based reward model:
 ```bash
 cd reward_model_training
 bash train_model.sh
 ```
 
-6. Train the RL Agent with the reward model:
+7. Train the RL Agent with the reward model:
 ```bash
 cd CREW/crew-algorithms
 bash ddpg.sh
 ```
 
-7. Evaluate the trained RL Agent
+8. Evaluate the trained RL Agent
 ```bash
 bash ddpg_eval.sh
 ```
