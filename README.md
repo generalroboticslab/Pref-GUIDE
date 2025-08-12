@@ -27,9 +27,14 @@ git clone https://github.com/generalroboticslab/Pref-GUIDE.git
 conda activate crew
 ```
 
-4. Download the human feedback dataset from [here](https://zenodo.org/records/16816251)
+4. Download the human feedback dataset from [here](https://zenodo.org/records/16816251), and extract it with the following
+```bash
+tar -xvzf RL_checkpoint.tar.gz
+cd RL_checkpoint
+python unzip_data.py
+```   
 
-5. Process the dataset for reward model training
+6. Process the dataset for reward model training
 ```bash
 cd process_data
 python process_data_traj.py
@@ -51,7 +56,6 @@ bash ddpg.sh
 ```bash
 bash ddpg_eval.sh
 ```
-
 
 ## Acknowledgement
 
